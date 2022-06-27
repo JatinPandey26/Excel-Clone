@@ -1,0 +1,179 @@
+*{
+margin: 0px;
+box-sizing: border-box;
+
+}
+body{
+    overflow: hidden;
+}
+
+
+
+.navbar{
+    background-color: rgb(65, 160, 128);
+    
+    display: flex;
+    height: 3rem;
+    /* width: 200%;  */
+}
+
+.navbar_options{
+    display: inline-block;
+    margin-right: 3rem;
+    margin: 1rem;
+}
+
+.fnBar{
+    background-color: rgb(212, 211, 211);
+    height: 4rem;
+    display: flex;     
+}
+
+.fnBar_options{
+    margin-right: 2rem;
+    margin: 1rem;
+    height: 60%;
+}
+/* .text_color,.color_fill{
+    position: relative;
+    
+} */
+/* .text_color>input,.color_fill>input{
+    position: absolute;
+    top : 0;
+    left:  0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+} */
+/* .color_fill>img,.text_color>img{
+    height: 2rem;
+    margin: 1rem;
+    
+} */
+
+.formula_bar{
+    background-color: rgb(212, 211, 211);
+    height: 4rem;
+    display: flex;
+    
+    
+}
+.formula_bar>*{
+    margin: 1rem;
+}
+
+.block_address{
+    width: 5%;
+    /* height: 3vh; */
+    background-color: white;
+    
+}
+
+.formula_bar_options{
+    margin-right: 1rem;
+}
+
+.formula_block{
+    background-color: white;
+    /* height: 3vh; */
+    width: 95%;
+    margin-right: 0px;
+}
+
+.grid_cont{
+    
+    position: relative;
+    overflow: scroll;
+    height : calc(100vh - 15rem);
+    
+}
+
+
+
+.cell,.col_label_element{
+    border: 1px solid black;
+    height: 2rem;
+    width: 10rem;
+    outline: none;
+    background-color: lightgrey;
+}
+
+.sheet_functions{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    
+    height: 4rem;
+}
+.add_sheets{
+    width: 3rem;
+    background-color: grey;
+}
+.sheet_functions>*{
+    margin: 5px;}
+
+.sheets_Container{
+    width: calc(100vw - 3rem);
+    background-color: rgb(65, 160, 128);
+    display: flex;
+    position: relative;
+    overflow: auto;
+    flex-shrink: 0;
+    justify-content: start;
+    align-items: center;
+}
+
+.sheets{
+    margin: 5px;
+    background-color: lightgrey;
+    min-width: max-content;
+    text-align: center;
+   
+    padding: 0.2rem;
+}
+
+.dummy_box{
+    background-color: lightgray;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+}
+.row_label{
+    background-color: aqua;
+    width : 2rem;
+    height: 10rem;
+}
+.cells_container{
+    position: absolute;
+    height: 12rem;
+    
+    
+    left: 2rem;
+    top:0rem;
+    
+}
+.col_label{
+    height: 2rem;
+    background-color: lightgrey;
+    display: flex;
+}
+.col_label_element{
+    text-align: center;
+    padding-top: 0.5rem;
+}
+.row_label_element{
+    background-color: lightgrey;
+    border: 0.5px solid black;
+    text-align: center;
+    padding-top: 0.5rem;
+    height: 2rem;
+}
+
+.cell_element_row{
+    
+    display: flex;
+    }
+
+    

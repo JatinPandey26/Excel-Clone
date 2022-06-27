@@ -1,0 +1,3 @@
+implemment update function and functionalities.
+
+work on directed graph
