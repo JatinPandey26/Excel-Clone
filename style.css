@@ -24,7 +24,7 @@ body{
 }
 
 .fnBar{
-    background-color: rgb(212, 211, 211);
+    background-color: #dfe4ea;
     height: 4rem;
     display: flex;     
 }
@@ -53,7 +53,7 @@ body{
 } */
 
 .formula_bar{
-    background-color: rgb(212, 211, 211);
+    background-color: #dfe4ea;
     height: 4rem;
     display: flex;
     
@@ -96,7 +96,7 @@ body{
     height: 2rem;
     width: 10rem;
     outline: none;
-    background-color: lightgrey;
+    background-color: #dfe4ea;
 }
 
 .sheet_functions{
@@ -109,14 +109,14 @@ body{
 }
 .add_sheets{
     width: 3rem;
-    background-color: grey;
+    background-color: #dfe4ea;
 }
 .sheet_functions>*{
     margin: 5px;}
 
 .sheets_Container{
     width: calc(100vw - 3rem);
-    background-color: rgb(65, 160, 128);
+    background-color: #dfe4ea;
     display: flex;
     position: relative;
     overflow: auto;
@@ -127,7 +127,7 @@ body{
 
 .sheets{
     margin: 5px;
-    background-color: lightgrey;
+    background-color: #ced6e0;
     min-width: max-content;
     text-align: center;
    
@@ -135,13 +135,13 @@ body{
 }
 
 .dummy_box{
-    background-color: lightgray;
+    background-color: grey;
     height: 2rem;
     width: 2rem;
     border: 1px solid black;
 }
 .row_label{
-    background-color: aqua;
+    
     width : 2rem;
     height: 10rem;
 }
@@ -156,7 +156,7 @@ body{
 }
 .col_label{
     height: 2rem;
-    background-color: lightgrey;
+    background-color: #dfe4ea;
     display: flex;
 }
 .col_label_element{
@@ -164,7 +164,7 @@ body{
     padding-top: 0.5rem;
 }
 .row_label_element{
-    background-color: lightgrey;
+    background-color: #dfe4ea;
     border: 0.5px solid black;
     text-align: center;
     padding-top: 0.5rem;

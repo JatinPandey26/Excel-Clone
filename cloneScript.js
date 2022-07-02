@@ -84,26 +84,26 @@ function updateToolbar() {
     if (getProp(activeCell).font == 'arial') font.selectedIndex = 0;
     else if (getProp(activeCell).font == 'sheriff') font.selectedIndex = 1;
     else if (getProp(activeCell).font == 'cursive') font.selectedIndex = 2;
-    if (bold.getAttribute('active') == 'true') bold.style.backgroundColor = 'red'
-    else bold.style.backgroundColor = 'lightGrey'
-    if (italic.getAttribute('active') == 'true') italic.style.backgroundColor = 'red'
-    else italic.style.backgroundColor = 'lightGrey'
-    if (underline.getAttribute('active') == 'true') underline.style.backgroundColor = 'red'
-    else underline.style.backgroundColor = 'lightGrey'
+    if (bold.getAttribute('active') == 'true') bold.style.backgroundColor = '#ced6e0'
+    else bold.style.backgroundColor = '#dfe4ea'
+    if (italic.getAttribute('active') == 'true') italic.style.backgroundColor = '#ced6e0'
+    else italic.style.backgroundColor = '#dfe4ea'
+    if (underline.getAttribute('active') == 'true') underline.style.backgroundColor = '#ced6e0'
+    else underline.style.backgroundColor = '#dfe4ea'
     if (leftAlign.getAttribute('active') == 'true') {
-        leftAlign.style.backgroundColor = 'red'
-        rightAlign.style.backgroundColor = 'lightgrey'
-        centerAlign.style.backgroundColor = 'lightgrey'
+        leftAlign.style.backgroundColor = '#ced6e0'
+        rightAlign.style.backgroundColor = '#dfe4ea'
+        centerAlign.style.backgroundColor = '#dfe4ea'
     }
     else if (rightAlign.getAttribute('active') == 'true') {
-        leftAlign.style.backgroundColor = 'lightgrey'
-        rightAlign.style.backgroundColor = 'red'
-        centerAlign.style.backgroundColor = 'lightgrey'
+        leftAlign.style.backgroundColor = '#dfe4ea'
+        rightAlign.style.backgroundColor = '#ced6e0'
+        centerAlign.style.backgroundColor = '#dfe4ea'
     }
     else if (centerAlign.getAttribute('active') == 'true') {
-        leftAlign.style.backgroundColor = 'lightgrey'
-        rightAlign.style.backgroundColor = 'lightgrey'
-        centerAlign.style.backgroundColor = 'red'
+        leftAlign.style.backgroundColor = '#dfe4ea'
+        rightAlign.style.backgroundColor = '#dfe4ea'
+        centerAlign.style.backgroundColor = '#ced6e0'
     }
 }
 cellArr.forEach((cell) => {

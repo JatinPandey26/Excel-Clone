@@ -36,7 +36,7 @@ for (let i = 1; i <= r; i++) {
             text_color: '#000000',
             font: 'arial',
             size: '14',
-            bgcolor: 'lightGrey',
+            bgcolor: '#dfe4ea',
             children : [],
             formula : "",
         }
