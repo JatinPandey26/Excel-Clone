@@ -19,8 +19,16 @@ body{
 
 .navbar_options{
     display: inline-block;
-    margin-right: 3rem;
-    margin: 1rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+.navbar_options:hover{
+    background-color : #ced6e0;
+}
+.Home_option{
+    background-color : #ced6e0;
 }
 
 .fnBar{
@@ -115,7 +123,7 @@ body{
     margin: 5px;}
 
 .sheets_Container{
-    width: calc(100vw - 3rem);
+    width: calc(100vw - 4rem);
     background-color: #dfe4ea;
     display: flex;
     position: relative;

@@ -9,6 +9,7 @@ let sheetsArr = document.querySelector('.sheets');
 let currentSheet ;
 
 addSheetBtn.addEventListener('click',()=>{
+    
     let element = document.createElement('div')
     noOfSheets += 1;
     element.setAttribute('class','sheets')
@@ -17,6 +18,7 @@ addSheetBtn.addEventListener('click',()=>{
     sheetsContainer.appendChild(element) 
     createSheetDB()
     createGraphDB()
+    currentSheet.scrollIntoView();
 })
 
 
@@ -86,3 +88,27 @@ function updateSheet(){
         cell.click();
     })
 }
+
+document.addEventListener('keydown',(e)=>{
+    if( e.key === 'Insert'){
+        let res = confirm("Delete sheet");
+        let sheetNo = currentSheet.getAttribute('sheetNo');
+        
+        
+        let sheetAhead = document.querySelectorAll('.sheets');
+        // console.log(sheetAhead);
+        sheetAhead.forEach((sheet) => {
+
+            if(sheet.getAttribute('sheetNo') > sheetNo){
+                sheet.setAttribute('sheetNo' , sheet.getAttribute('sheetNo')-1 );
+                sheet.innerText = 'sheet ' + sheet.getAttribute('sheetNo');
+            }
+        })
+       
+
+        sheetsStorage.splice(sheetNo)
+        graphStorage.splice(sheetNo)
+        sheetsContainer.removeChild(currentSheet);
+        
+    }
+})
